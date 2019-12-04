@@ -15,6 +15,7 @@ namespace PartsUnlimited.UnitTests.Utils
         [TestMethod]
         public async Task OrdersQuery_IndexHelperWithNoUsername()
         {
+            // version 2.0
             var ordersQuery = new OrdersQuery(new MockDataContext());
             var model = await ordersQuery.IndexHelperAsync(null, new DateTime(2016, 1, 1), new DateTime(2016, 1, 3), null, false);
 
